@@ -2,50 +2,57 @@ const primary = "primary"
 
 const setPrimaryValue = () =>
 {
-    fill("email", "pandi@mailinator.com")
-    fill("password", "pandi@123")
-    fill("firstName", "Pandiyaraj")
-    fill("lastName", "M")
-    fill("phone", "9876543210")
-    fill("address1", "No 10, Jeevan nagar")
-    fill("address2", "Adampakkam")
-    fill("city", "Chennai")
-    fill("state", "Tamil Nadu")
+    fill("email", "hiring@iomd.info")
+    fill("password", "pandi@123")
+    fill("firstName", "Rohan")
+    fill("lastName", "Mahadevan")
+    fill("phone", "4085551212")
+    fill("address1", "900 Menlo Oaks Drive")
+    fill("street", "900 Menlo Oaks Drive")
+    fill("city", "Menlo Park")
+    fill("country", "US")
+    fill("state", "CA")
+    fill("postalCode", "94025")
+    fill("postCode", "94025")
 }
 
 const setAnonymousValue = () =>
 {
-    fill("email", "anonymous@gmail.com")
+    fill("email", "test1.ideas2it@iomd.info")
     fill("password", "sample@123")
-    fill("firstName", "Anonmyous")
-    fill("lastName", "Info")
-    fill("phone", "9876543210")
-    fill("address1", "No1 South African Shop")
-    fill("address2", "Area")
-    fill("city", "chennai")
-    fill("state", "Tamil Nadu")
+    fill("firstName", "Rohan")
+    fill("lastName", "Mahadevan")
+    fill("phone", "4085551212")
+    fill("address1", "361 Linfield drive")
+    fill("city", "menlo park")
+    fill("state", "ca")
+    fill("country", "United States")
+    fill("postalCode", "94025")
 }
 
 function fill(name, value) {
-    if (document.querySelector(`input[autocomplete*=${name} i]`)) {
+    if (document.querySelector(`[autocomplete*=${name} i]`)) {
         fillByAttributeName(name, value, "autocomplete")
-        fillByAttributeName(name, value, "name");
+        return fillByAttributeName(name, value, "name");
     } else if (document.querySelector(`[name*=${name} i]`)) {
-        fillByAttributeName(name, value, "name");
+        return fillByAttributeName(name, value, "name");
     } else if (document.querySelector(`[id*=${name} i]`)) {
-        fillByAttributeName(name, value, "id");
+        return fillByAttributeName(name, value, "id");
     } else if (document.querySelector(`[placeholder*=${name} i]`)) {
-        fillByAttributeName(name, value, "placeholder");
-    }
+        return fillByAttributeName(name, value, "placeholder");
+    } else if (name.includes("email") && document.querySelector(`[type*=${name} i]`)) {
+        return fillByAttributeName(name, value, "type");
+    }
 }
 
 function fillByAttributeName(name, value, attribute) {
     let elements = document.querySelectorAll(`[${attribute}*=${name} i]`);
     
     elements.forEach(function (element) {
-        autofill(element, value);
+        return autofill(element, value);
     });
 }
+
 function autofill(element, value) {
     let event = document.createEvent("HTMLEvents");
     event.initEvent('change', true, false);
@@ -53,6 +60,7 @@ function autofill(element, value) {
     element.value = value;
     element.dispatchEvent(event);
     element.blur();
+    return element
 }
 
 browser.runtime.onMessage.addListener((request, sender, sendResponse) => {

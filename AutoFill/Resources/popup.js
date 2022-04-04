@@ -3,11 +3,13 @@ const infoDetail = [
 name: "Fill Info",
 code: '#FA96A7',
 key:"primary"
-}/*,{
-name: "Anonmyous",
-code: '#F28500',
-key: "anonmyous"
-}*/]
+}
+//,{
+//name: "Anonmyous",
+//code: '#F28500',
+//key: "anonmyous"
+//}
+]
 
 const sendInfo = async (info) => {
 const [tab] = await browser.tabs.query({currentWindow: true, active: true})
