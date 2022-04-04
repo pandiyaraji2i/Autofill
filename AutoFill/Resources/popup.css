@@ -1,0 +1,29 @@
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    width: 100px;
+    height: 80px;
+    padding: 10px;
+
+    font-family: system-ui;
+    text-align: center;
+}
+
+button {
+width: 75px;
+height: 75px;
+border-radius: 10px;
+color: black;
+font-size: 14px;
+}
+#container {
+display: flex;
+justify-content: space-evenly;
+margin-top: 15px;
+}
+
+@media (prefers-color-scheme: dark) {
+    /* Dark Mode styles go here. */
+}
