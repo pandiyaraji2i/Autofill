@@ -92,6 +92,7 @@
 		045ABC4827F9BA8800EB3A12 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
 		045ABC4A27F9BA8800EB3A12 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
 		045ABC4C27F9BA8800EB3A12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04DC544127FB2DB5000B2BF6 /* AutoFill.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoFill.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +184,7 @@
 		045ABC3827F9BA8800EB3A12 /* AutoFill */ = {
 			isa = PBXGroup;
 			children = (
+				04DC544127FB2DB5000B2BF6 /* AutoFill.entitlements */,
 				045ABC3927F9BA8800EB3A12 /* SafariWebExtensionHandler.swift */,
 				045ABC4C27F9BA8800EB3A12 /* Info.plist */,
 				045ABC3B27F9BA8800EB3A12 /* Resources */,
@@ -570,11 +572,11 @@
 				CODE_SIGN_ENTITLEMENTS = autofillboard/autofillboard.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 9W5W4S5PA3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = autofillboard/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = AutoFill;
+				INFOPLIST_KEY_CFBundleDisplayName = I2IAutoFill;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -604,11 +606,11 @@
 				CODE_SIGN_ENTITLEMENTS = autofillboard/autofillboard.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 9W5W4S5PA3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = autofillboard/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = AutoFill;
+				INFOPLIST_KEY_CFBundleDisplayName = I2IAutoFill;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -708,13 +710,14 @@
 		045ABC5127F9BA8800EB3A12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AutoFill/AutoFill.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 9W5W4S5PA3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AutoFill/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = AutoFill;
+				INFOPLIST_KEY_CFBundleDisplayName = I2IAutoFill;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -740,13 +743,14 @@
 		045ABC5227F9BA8800EB3A12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AutoFill/AutoFill.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 9W5W4S5PA3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AutoFill/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = AutoFill;
+				INFOPLIST_KEY_CFBundleDisplayName = I2IAutoFill;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
