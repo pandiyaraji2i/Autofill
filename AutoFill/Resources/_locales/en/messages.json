@@ -1,10 +1,10 @@
 {
     "extension_name": {
-        "message": "AutoFill",
+        "message": "I2IAutoFill",
         "description": "The display name for the extension."
     },
     "extension_description": {
-        "message": "This is AutoFill. You should tell us what your extension does here.",
+        "message": "This is I2IAutoFill. You should tell us what your extension does here.",
         "description": "Description of what the extension does."
     }
 }

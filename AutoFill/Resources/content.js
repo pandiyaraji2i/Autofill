@@ -1,7 +1,7 @@
 const primary = "primary"
 
 function setValue (profile) {
-    inputFields = document.querySelectorAll(`input[type="text"], input[type="email"], select`)
+    inputFields = document.querySelectorAll(`input[type="text"], input[type="email"],input[type="password"], select`)
     inputFields.forEach( (element) => {
         fillFields(profile, element)
     })
@@ -86,6 +86,7 @@ anonmyousProfile = {
 let fieldNames = {
     email: ["email"],
     phone: ["phone", "mobile"],
+    password: ["password"],
     firstName: ["firstname", "first name", "first_name", "first-name", "first", "fname"],
     lastName: ["lastname", "last name", "last_name", "last-name", "last", "lname"],
     address1: ["address1", "address 1", "address line 1", "location"],

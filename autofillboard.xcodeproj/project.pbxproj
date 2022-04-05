@@ -570,7 +570,7 @@
 				CODE_SIGN_ENTITLEMENTS = autofillboard/autofillboard.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 9W5W4S5PA3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = autofillboard/Info.plist;
@@ -604,7 +604,7 @@
 				CODE_SIGN_ENTITLEMENTS = autofillboard/autofillboard.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 9W5W4S5PA3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = autofillboard/Info.plist;
@@ -710,7 +710,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 9W5W4S5PA3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AutoFill/Info.plist;
@@ -742,7 +742,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 9W5W4S5PA3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AutoFill/Info.plist;
