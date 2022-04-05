@@ -5,6 +5,12 @@ function setValue (profile) {
     inputFields.forEach( (element) => {
         fillFields(profile, element)
     })
+    checkboxes = document.querySelectorAll(`input[type="checkbox"]`)
+    checkboxes.forEach( (checkbox) => {
+        if (checkbox.name.toLowerCase().includes("consent")) {
+            checkbox.click()
+        }
+    })
 }
 
 function fillFields(profile, element) {
