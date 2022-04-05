@@ -1,74 +1,81 @@
 const primary = "primary"
 
-const setPrimaryValue = () =>
-{
-    fill("email", "hiring@iomd.info")
-    fill("password", "pandi@123")
-    fill("firstName", "Rohan")
-    fill("lastName", "Mahadevan")
-    fill("phone", "4085551212")
-    fill("address1", "900 Menlo Oaks Drive")
-    fill("street", "900 Menlo Oaks Drive")
-    fill("city", "Menlo Park")
-    fill("country", "US")
-    fill("state", "CA")
-    fill("postalCode", "94025")
-    fill("postCode", "94025")
+function setPrimaryValue (profile) {
+    inputFields = document.querySelectorAll(`input[type="text"], input[type="email"], select`)
+    inputFields.forEach( (element) => {
+        fillFields(profile, element)
+    })
 }
 
-const setAnonymousValue = () =>
-{
-    fill("email", "test1.ideas2it@iomd.info")
-    fill("password", "sample@123")
-    fill("firstName", "Rohan")
-    fill("lastName", "Mahadevan")
-    fill("phone", "4085551212")
-    fill("address1", "361 Linfield drive")
-    fill("city", "menlo park")
-    fill("state", "ca")
-    fill("country", "United States")
-    fill("postalCode", "94025")
-}
-
-function fill(name, value) {
-    if (document.querySelector(`[autocomplete*=${name} i]`)) {
-        fillByAttributeName(name, value, "autocomplete")
-        return fillByAttributeName(name, value, "name");
-    } else if (document.querySelector(`[name*=${name} i]`)) {
-        return fillByAttributeName(name, value, "name");
-    } else if (document.querySelector(`[id*=${name} i]`)) {
-        return fillByAttributeName(name, value, "id");
-    } else if (document.querySelector(`[placeholder*=${name} i]`)) {
-        return fillByAttributeName(name, value, "placeholder");
-    } else if (name.includes("email") && document.querySelector(`[type*=${name} i]`)) {
-        return fillByAttributeName(name, value, "type");
+function fillFields(profile, element) {
+    for(let field in fieldNames) {
+        let names = fieldNames[field]
+        for(let name of names) {
+            if (isElementMatches(element, name) ) {
+                return autofill(element, profile, field)
+            }
+        }
     }
 }
 
-function fillByAttributeName(name, value, attribute) {
-    let elements = document.querySelectorAll(`[${attribute}*=${name} i]`);
-    
-    elements.forEach(function (element) {
-        return autofill(element, value);
-    });
+function isElementMatches(element, name) {
+    if (element.getAttribute("autocomplete")?.toLowerCase().includes(name)) {
+        return true
+    } else if (element.getAttribute("name")?.toLowerCase().includes(name)) {
+        return true
+    } else if (element.getAttribute("id")?.toLowerCase().includes(name)) {
+        return true
+    } else if (element.getAttribute("placeholder")?.toLowerCase().includes(name)) {
+        return true
+    } else {
+        return false
+    }
+ }
+
+profile1 = {
+    email: "hiring@iomd.info",
+    password: "pandi@123",
+    firstName: "Rohan",
+    lastName: "Mahadevan",
+    phone: "4085551212",
+    address1: "900 Menlo Oaks Drive",
+    address2: "Palmolive",
+    city: "Menlo Park",
+    country: "US",
+    state: "CA",
+    postalCode: "94025"
 }
 
-function autofill(element, value) {
+let fieldNames = {
+    email: ["email"],
+    phone: ["phone", "mobile"],
+    firstName: ["firstname", "first name", "first_name", "first-name", "first", "fname"],
+    lastName: ["lastname", "last name", "last_name", "last-name", "last", "lname"],
+    address1: ["address1", "address 1", "address line 1", "location"],
+    address2: ["address2", "address 2", "address line 2", "street2"],
+    city: ["city"],
+    state: ["state", "region", "zone"],
+    country: ["country"],
+    postalCode: ["postal", "postcode", "pincode", "zip", "post-code", "post", "post_code"]
+}
+
+function autofill(element, profile, field) {
+    console.log("filling")
     let event = document.createEvent("HTMLEvents");
     event.initEvent('change', true, false);
     element.focus();
-    element.value = value;
+    element.value = profile[field];
     element.dispatchEvent(event);
     element.blur();
-    return element
 }
 
 browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
 //        setPrimaryValue()
 //    if (request.key == primary){
-        setPrimaryValue()
+    setPrimaryValue(profile1)
 //    }else{
 //        setAnonymousValue()
 //    }
 });
+
 
