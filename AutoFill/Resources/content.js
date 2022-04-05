@@ -1,6 +1,6 @@
 const primary = "primary"
 
-function setPrimaryValue (profile) {
+function setValue (profile) {
     inputFields = document.querySelectorAll(`input[type="text"], input[type="email"], select`)
     inputFields.forEach( (element) => {
         fillFields(profile, element)
@@ -34,7 +34,7 @@ function isElementMatches(element, name) {
 
 profile1 = {
     email: "hiring@iomd.info",
-    password: "pandi@123",
+    password: "test@123",
     firstName: "Rohan",
     lastName: "Mahadevan",
     phone: "4085551212",
@@ -43,7 +43,44 @@ profile1 = {
     city: "Menlo Park",
     country: "US",
     state: "CA",
-    postalCode: "94025"
+    postalCode: "94025",
+    cardnumber:"5459612890007890",
+    expiry: "04/24",
+    cvv: "123"
+}
+
+secondaryProfile = {
+    email: "test3.ideas2it@iomd.info",
+    password: "test@123",
+    firstName: "Harsha",
+    lastName: "Elchuri",
+    phone: "4085551212",
+    address1: "361 Linfield drive",
+    address2: "Palmolive",
+    city: "Menlo Park",
+    country: "US",
+    state: "CA",
+    postalCode: "94025",
+    cardnumber:"5459612890007174",
+    expiry: "07/22",
+    cvv: "345"
+}
+
+anonmyousProfile = {
+    email: "test2.ideas2it@iomd.info",
+    password: "test@123",
+    firstName: "Test2",
+    lastName: "Ideas2it",
+    phone: "4085551212",
+    address1: "Belle Haven Branch Library",
+    address2: "Palmolive",
+    city: "Menlo Park",
+    country: "US",
+    state: "CA",
+    postalCode: "94025",
+    cardnumber:"4207399013131009",
+    expiry: "04/23",
+    cvv: "456"
 }
 
 let fieldNames = {
@@ -56,7 +93,10 @@ let fieldNames = {
     city: ["city"],
     state: ["state", "region", "zone"],
     country: ["country"],
-    postalCode: ["postal", "postcode", "pincode", "zip", "post-code", "post", "post_code"]
+    postalCode: ["postal", "postcode", "pincode", "zip", "post-code", "post", "post_code"],
+    cardnumber: ["cc-number", "credit-card-number", "creditcardnumber", "cardnumber", "encryptedCardNumber"],
+    expiry : ["cc-exp", "expirationDate", "expiration", "encrptedExpiryDate"],
+    cvv: ["cs-csc", "cvv", "encryptedSecurityCode"]
 }
 
 function autofill(element, profile, field) {
@@ -72,10 +112,20 @@ function autofill(element, profile, field) {
 browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
 //        setPrimaryValue()
 //    if (request.key == primary){
-    setPrimaryValue(profile1)
+//    setPrimaryValue(profile1)
 //    }else{
 //        setAnonymousValue()
 //    }
+    
+    if (request == "primary"){
+        setValue(profile1)
+    }else if (request == "secondary"){
+        setValue(secondaryProfile)
+    }else if (request == "anonmyous"){
+        setValue(anonmyousProfile)
+    }else{
+        setValue(profile1)
+    }
 });
 
 

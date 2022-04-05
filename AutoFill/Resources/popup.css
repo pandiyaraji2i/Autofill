@@ -3,8 +3,8 @@
 }
 
 body {
-    width: 100px;
-    height: 80px;
+    width: 90%;
+    height: 90%;
     padding: 10px;
 
     font-family: system-ui;
@@ -12,14 +12,18 @@ body {
 }
 
 button {
-width: 75px;
-height: 75px;
+width: 200px;
 border-radius: 10px;
 color: black;
 font-size: 14px;
+display:block;
+margin:10px auto;
+position:relative;
+text-align:center;
+padding:10px 20px;
 }
-#container {
-display: flex;
+#info-container {
+/*display: flex;*/
 justify-content: space-evenly;
 margin-top: 15px;
 }

@@ -570,11 +570,11 @@
 				CODE_SIGN_ENTITLEMENTS = autofillboard/autofillboard.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 9W5W4S5PA3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = autofillboard/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = AutoFill;
+				INFOPLIST_KEY_CFBundleDisplayName = I2IAutoFill;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -604,11 +604,11 @@
 				CODE_SIGN_ENTITLEMENTS = autofillboard/autofillboard.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 9W5W4S5PA3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = autofillboard/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = AutoFill;
+				INFOPLIST_KEY_CFBundleDisplayName = I2IAutoFill;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -714,7 +714,7 @@
 				DEVELOPMENT_TEAM = 9W5W4S5PA3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AutoFill/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = AutoFill;
+				INFOPLIST_KEY_CFBundleDisplayName = I2IAutoFill;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -746,7 +746,7 @@
 				DEVELOPMENT_TEAM = 9W5W4S5PA3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AutoFill/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = AutoFill;
+				INFOPLIST_KEY_CFBundleDisplayName = I2IAutoFill;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (

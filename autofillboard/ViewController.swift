@@ -9,9 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var versionLabel : UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.title = "Home"
+        if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
+            if let appVersion = Bundle.main.infoDictionary!["CFBundleVersion"] as? String{
+                self.versionLabel.text = "Version \(version).\(appVersion)"
+            }else{
+                self.versionLabel.text = "Version \(version)"
+            }
+           
+       }
     }
 
     
@@ -26,6 +36,15 @@ class ViewController: UIViewController {
                     })
     }
     }
+    
+    @IBAction func onSafari(){
+        guard let tedBakerURL = URL(string: "https://www.tedbaker.com") else {
+                    return
+                }
+        
+        UIApplication.shared.openURL(tedBakerURL as URL)
+    }
+
 
 }
 
