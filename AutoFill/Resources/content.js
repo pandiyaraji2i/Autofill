@@ -1,7 +1,10 @@
-const primary = "primary"
-
 function setValue (profile) {
-    inputFields = document.querySelectorAll(`input[type="text"], input[type="email"],input[type="password"], select`)
+    inputFields = document.querySelectorAll(`
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        select`)
     inputFields.forEach( (element) => {
         fillFields(profile, element)
     })
@@ -101,13 +104,12 @@ let fieldNames = {
     state: ["state", "region", "zone"],
     country: ["country"],
     postalCode: ["postal", "postcode", "pincode", "zip", "post-code", "post", "post_code"],
-    cardnumber: ["cc-number", "credit-card-number", "creditcardnumber", "cardnumber", "encryptedCardNumber"],
-    expiry : ["cc-exp", "expirationDate", "expiration", "encrptedExpiryDate"],
-    cvv: ["cs-csc", "cvv", "encryptedSecurityCode"]
+    cardnumber: ["cc-number", "credit-card-number", "creditcardnumber", "cardnumber", "encryptedcardnumber"] ,
+    expiry : ["expiry", "cc-exp", "expirationDate", "expiration", "encryptedexpirydate", "MM/YY"],
+    cvv: ["cs-csc", "cvv", "securitycode"]
 }
 
 function autofill(element, profile, field) {
-    console.log("filling")
     let event = document.createEvent("HTMLEvents");
     event.initEvent('change', true, false);
     element.focus();
