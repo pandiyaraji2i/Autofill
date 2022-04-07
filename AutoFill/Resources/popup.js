@@ -9,6 +9,10 @@ name: "Harsha",
 code: '#F28500',
 key: "secondary"
 },{
+name: "India",
+code: '#A2A9B1',
+key: "india"
+},{
 name: "Anonmyous",
 code: '#A2A9B1',
 key: "anonmyous"
