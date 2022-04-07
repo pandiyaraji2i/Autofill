@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import SafariServices
+import SafariServices.SFSafariApplication
+
 
 class ViewController: UIViewController {
 
@@ -22,7 +25,23 @@ class ViewController: UIViewController {
             }
            
        }
+        
+//        self.sendMessageToExtension(nil)
     }
+    
+//    func saveProfile(){
+//        let sharedDefault = UserDefaults(suiteName: "group.ideas2it.autofill")!
+//        sharedDefault.set(self.versionLabel.text, forKey: "appVersion")
+//        sharedDefault.synchronize()
+//    }
+//
+//    func sendMessageToExtension(_ sender: AnyObject?) {
+//        let messageName = "Hello from App"
+//        let messageInfo = ["AdditionalInformation":"Goes Here"]
+//        SFSafariApplication.dispatchMessage(withName: messageName, toExtensionWithIdentifier: "com.ideas2it.autofillboard.AutoFill", userInfo: messageInfo) { error in
+//            debugPrint("Message attempted. Error info: \(String.init(describing: error))")
+//        }
+//    }
 
     
     @IBAction func onSettings(){
@@ -44,7 +63,6 @@ class ViewController: UIViewController {
         
         UIApplication.shared.openURL(tedBakerURL as URL)
     }
-
 
 }
 

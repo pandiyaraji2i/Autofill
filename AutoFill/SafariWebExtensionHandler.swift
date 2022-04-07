@@ -6,6 +6,7 @@
 //
 
 import SafariServices
+import SafariServices.SFSafariApplication
 import os.log
 
 class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
@@ -20,5 +21,6 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
 
         context.completeRequest(returningItems: [response], completionHandler: nil)
     }
+    
 
 }
