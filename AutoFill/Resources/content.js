@@ -4,6 +4,7 @@ function useProfile(profile) {
         input[type="email"],
         input[type="password"],
         input[type="tel"],
+        input[type="hidden"],
         select`)
     inputFields.forEach( (element) => {
         fillFields(profile, element)
