@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		043F3B3B27FF1C090036A259 /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F3B3A27FF1C090036A259 /* CreateProfileViewController.swift */; };
 		045ABC0327F9B9F200EB3A12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045ABC0227F9B9F200EB3A12 /* AppDelegate.swift */; };
 		045ABC0527F9B9F200EB3A12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045ABC0427F9B9F200EB3A12 /* SceneDelegate.swift */; };
 		045ABC0727F9B9F200EB3A12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045ABC0627F9B9F200EB3A12 /* ViewController.swift */; };
@@ -27,9 +26,6 @@
 		045ABC4927F9BA8800EB3A12 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 045ABC4827F9BA8800EB3A12 /* popup.css */; };
 		045ABC4B27F9BA8800EB3A12 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 045ABC4A27F9BA8800EB3A12 /* popup.js */; };
 		045ABC4F27F9BA8800EB3A12 /* AutoFill.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 045ABC3727F9BA8800EB3A12 /* AutoFill.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		04A053F527FDA5910069A041 /* IIFormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A053F427FDA5900069A041 /* IIFormTextField.swift */; };
-		04A053F727FDA5DA0069A041 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A053F627FDA5DA0069A041 /* UIColorExtensions.swift */; };
-		04A053F927FDA6830069A041 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A053F827FDA6830069A041 /* Profile.swift */; };
 		04E14C9027FF1AEC007B6018 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E14C8F27FF1AEC007B6018 /* SafariServices.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,7 +68,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		043F3B3A27FF1C090036A259 /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
 		045ABBFF27F9B9F200EB3A12 /* autofillboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = autofillboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045ABC0227F9B9F200EB3A12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		045ABC0427F9B9F200EB3A12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,9 +93,6 @@
 		045ABC4827F9BA8800EB3A12 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
 		045ABC4A27F9BA8800EB3A12 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
 		045ABC4C27F9BA8800EB3A12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04A053F427FDA5900069A041 /* IIFormTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IIFormTextField.swift; sourceTree = "<group>"; };
-		04A053F627FDA5DA0069A041 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
-		04A053F827FDA6830069A041 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		04E14C8D27FEC6C2007B6018 /* AutoFill.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoFill.entitlements; sourceTree = "<group>"; };
 		04E14C8F27FF1AEC007B6018 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -168,10 +160,6 @@
 				045ABC0227F9B9F200EB3A12 /* AppDelegate.swift */,
 				045ABC0427F9B9F200EB3A12 /* SceneDelegate.swift */,
 				045ABC0627F9B9F200EB3A12 /* ViewController.swift */,
-				043F3B3A27FF1C090036A259 /* CreateProfileViewController.swift */,
-				04A053F427FDA5900069A041 /* IIFormTextField.swift */,
-				04A053F627FDA5DA0069A041 /* UIColorExtensions.swift */,
-				04A053F827FDA6830069A041 /* Profile.swift */,
 				045ABC0827F9B9F200EB3A12 /* Main.storyboard */,
 				045ABC0B27F9B9F400EB3A12 /* Assets.xcassets */,
 				045ABC0D27F9B9F400EB3A12 /* LaunchScreen.storyboard */,
@@ -401,12 +389,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				045ABC0727F9B9F200EB3A12 /* ViewController.swift in Sources */,
-				04A053F927FDA6830069A041 /* Profile.swift in Sources */,
 				045ABC0327F9B9F200EB3A12 /* AppDelegate.swift in Sources */,
 				045ABC0527F9B9F200EB3A12 /* SceneDelegate.swift in Sources */,
-				04A053F527FDA5910069A041 /* IIFormTextField.swift in Sources */,
-				04A053F727FDA5DA0069A041 /* UIColorExtensions.swift in Sources */,
-				043F3B3B27FF1C090036A259 /* CreateProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,7 +584,7 @@
 				CODE_SIGN_ENTITLEMENTS = autofillboard/autofillboard.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 9W5W4S5PA3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = autofillboard/Info.plist;
@@ -634,7 +618,7 @@
 				CODE_SIGN_ENTITLEMENTS = autofillboard/autofillboard.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 9W5W4S5PA3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = autofillboard/Info.plist;
@@ -741,7 +725,7 @@
 				CODE_SIGN_ENTITLEMENTS = AutoFill/AutoFill.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 9W5W4S5PA3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AutoFill/Info.plist;
@@ -774,7 +758,7 @@
 				CODE_SIGN_ENTITLEMENTS = AutoFill/AutoFill.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 9W5W4S5PA3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AutoFill/Info.plist;

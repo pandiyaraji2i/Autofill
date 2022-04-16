@@ -56,13 +56,13 @@ profile1 = {
     state: "CA",
     postalCode: "94025",
     cardName: "Rohan Mahadevan",
-    cardnumber:"5459 6128 9000 7890",
+    cardnumber:"4111 1111 1111 1111",
     expiry: "04/24",
     cvv: "123"
 }
 
 secondaryProfile = {
-    email: "test2.ideas2it@iomd.info",
+    email: "test1.ideas2it@iomd.info",
     password: "test@123",
     firstName: "Harsha",
     lastName: "Elchuri",
@@ -74,13 +74,13 @@ secondaryProfile = {
     state: "CA",
     postalCode: "94025",
     cardName: "Harsha Elchuri",
-    cardnumber:"5459 6128 9000 7174",
+    cardnumber:"6011 1111 1111 1117",
     expiry: "07/22",
     cvv: "123"
 }
 
 indiaProfile = {
-    email: "test.ideas2it@iomd.info",
+    email: "test3.ideas2it@iomd.info",
     password: "test@123",
     firstName: "India",
     lastName: "Test",
@@ -110,9 +110,9 @@ anonmyousProfile = {
     state: "CA",
     postalCode: "94025",
     cardName: "Test2 Ideas2it",
-    cardnumber:"4207 3990 1313 1009",
+    cardnumber:"3530 1113 3330 0000",
     expiry: "04/23",
-    cvv: "456"
+    cvv: "123"
 }
 
 let fieldNames = {
